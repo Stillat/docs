@@ -81,7 +81,7 @@ Depending on your configuration, you will see output similar to this:
 <a name="cli-migrations"></a>
 ## Running Migrations on Tenants
 
-Laravle provides migrations, a type of version control for your databases. The tenant service allows you to run migrations on your tenant services, and this is overwhelmingly useful.
+Laravel provides migrations, a type of version control for your databases. The tenant service allows you to run migrations on your tenant services, and this is overwhelmingly useful.
 
 ### Running Migrations
 
