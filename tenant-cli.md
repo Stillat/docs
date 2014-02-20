@@ -103,6 +103,8 @@ The following commands will perform their function on all tenant databases. To p
 
 ### Rolling Back Migrations
 
+The following commands will perform their function on all tenant databases. To perform similar actions on the tenant server itself, see Laravel's documentation on migrations.
+
 #### Rollback The Last Migration Operation
 
     php artisan tenant:rollback
