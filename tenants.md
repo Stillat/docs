@@ -1,6 +1,6 @@
 # Basic Tenant Usage
 
--[Configuration](#configuration)
+- [Configuration](#configuration)
 
 <a name="configuration"></a>
 ## Configuration
