@@ -85,7 +85,7 @@ Laravel provides migrations, a type of version control for your databases. The t
 
 ### Running Migrations
 
-The following commands will perform their function on all tenant databases. To perform actions on the tenant server itself, see Laravel's documentation on migrations.
+The following commands will perform their function on all tenant databases. To perform similar actions on the tenant server itself, see Laravel's documentation on migrations.
 
 #### Running All Outstanding Migrations
 
@@ -100,3 +100,17 @@ The following commands will perform their function on all tenant databases. To p
     php artisan tenant:migrate --package=vendor/package
 
 > **Note:** If you receive a "class not found" error when running tenant migrations, try running the `composer dump-autoload` command.
+
+#### Rolling Back Migrations
+
+#### Rollback The Last Migration Operation
+
+    php artisan tenant:rollback
+
+#### Rollback All Migrations
+
+    php artisan tenant:reset
+
+#### Rollback All Migrations And Run Them Again
+
+    php artisan tenant:refresh
