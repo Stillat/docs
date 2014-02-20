@@ -5,6 +5,7 @@
 - [Creating a Tenant](#cli-create)
 - [Dropping a Tenant](#cli-drop)
 - [Resolving Tenant Names](#cli-name)
+- [Running Migrations on Tenants](#cli-migrations)
 
 <a name="cli-install"></a>
 ## Installing the Tenant Server
@@ -76,3 +77,26 @@ Depending on your configuration, you will see output similar to this:
     dndoqqmezcaqqciokiidneemdamneecz
 
 > **Note:** A tenant does **not** have to exist in order to determine what name it will be given.
+
+<a name="cli-migrations"></a>
+## Running Migrations on Tenants
+
+Laravle provides migrations, a type of version control for your databases. The tenant service allows you to run migrations on your tenant services, and this is overwhelmingly useful.
+
+### Running Migrations
+
+The following commands will perform their function on all tenant databases. To perform actions on the tenant server itself, see Laravel's documentation on migrations.
+
+#### Running All Outstanding Migrations
+
+    php artisan tenant:migrate
+
+#### Running All Outstanding Migrations For A Path
+
+    php artisan tenant:migrate --path=app/foo/migrations
+
+#### Running All Outstanding Migrations For A Package
+
+    php artisan tenant:migrate --package=vendor/package
+
+> **Note:** If you receive a "class not found" error when running tenant migrations, try running the `composer dump-autoload` command.
