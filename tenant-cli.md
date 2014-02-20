@@ -1,8 +1,36 @@
 # Advanced Tenant Command Line Interface (CLI)
 
+- [Installing the Tenant Server](#cli-install)
+- [Removing the Tenant Server](#cli-uninstall)
 - [Creating a Tenant](#cli-create)
 - [Dropping a Tenant](#cli-drop)
 - [Resolving Tenant Names](#cli-name)
+
+<a name="cli-install"></a>
+## Installing the Tenant Server
+
+In order for the tenant service to function, there needs to be one central database. We will call this the Tenant Server. This is usually the same database that holds the user's credentials and other common tables. Installing the tenant service is similar to installing the migrations table in Laravel. To install the tenant server tables, just run the `tenant:install` Artisan command:
+
+    php artisan tenant:install
+
+After the command has run, you will see (depending on your configuration) output similar to:
+
+    Tenant table created successfully.
+    Tenant account table created successfully.
+
+<a name="cli-uninstall"></a>
+## Removing the Tenant Server
+
+To remove the tenant server tables, you can run the `tenant:uninstall` Artisan command:
+
+    php artisan tenant:uninstall
+
+This will produce output similar to the following:
+
+    Tenant table removed successfully.
+    Tenant account table removed successfully.
+
+Currently, this command leaves the tenant databases available.
 
 <a name="cli-create"></a>
 ## Creating a Tenant
@@ -16,6 +44,8 @@ For example, if we wanted to create a new tenant database for an account with an
 And then, depending on your configuration you will see output similar to this:
 
     dndoqqmezcaqqciokiidneemdamneecz created successfully
+
+It should also be noted that this command will also create a `migrations` table for your new tenant database.
 
 <a name="cli-drop"></a>
 ## Dropping a Tenant
