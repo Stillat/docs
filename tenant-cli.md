@@ -101,7 +101,7 @@ The following commands will perform their function on all tenant databases. To p
 
 > **Note:** If you receive a "class not found" error when running tenant migrations, try running the `composer dump-autoload` command.
 
-#### Rolling Back Migrations
+### Rolling Back Migrations
 
 #### Rollback The Last Migration Operation
 
