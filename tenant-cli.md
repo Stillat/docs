@@ -79,7 +79,7 @@ Depending on your configuration, you will see output similar to this:
 > **Note:** A tenant does **not** have to exist in order to determine what name it will be given.
 
 <a name="cli-migrations"></a>
-## Running Migrations on Tenants
+## Tenant Migrations
 
 Laravel provides migrations, a type of version control for your databases. The tenant service allows you to run migrations on your tenant services, and this is overwhelmingly useful.
 
