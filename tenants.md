@@ -99,7 +99,7 @@ The default configuration file should look like this:
 
 The Stillat Tenant service allows developers to leverage Laravel's Eloquent ORM for mutli-tenant applications. It also realizes that there are instances where you need your application models to communicate to a central server (for things such as user authentication and some logging) and need other models to communicate with your client's individual tenant database.
 
-The Stillat Tenant service does this by extending Eloquent's `Model` class and making a few changes. This means that you can use your models just like you are used to. The only change you have to make to your model is extend from the Tenant service's model class instead of Eloquent's:
+The Stillat Tenant service does this by extending Eloquent's `Model` class and making a few changes. This means that you can use your models just like you are used to. The only change you have to make to your model is to extend from the Tenant service's model class instead of Eloquent's:
 
     <?php
 
