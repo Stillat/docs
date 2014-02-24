@@ -13,7 +13,7 @@ The Stillat Tenant service makes getting a setup like this running quickly. Usin
 <a name="configuration"></a>
 ## Configuration
 
-Stillat makes connecting a single application instance to multiple databases at a time. This can be useful when developing Software as a Service (SaaS) applications. The tenant configuration file should be `app/config/tenant.php`. If this file does not exist (likely if you have just installed the Stillat framework), you should create it.
+Stillat makes connecting a single application instance to multiple databases at a time very easy. This can be useful when developing Software as a Service (SaaS) applications. The tenant configuration file should be `app/config/tenant.php`. If this file does not exist (likely if you have just installed the Stillat framework), you should create it.
 
 The default configuration file should look like this:
 
