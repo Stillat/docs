@@ -1,6 +1,14 @@
 # Basic Tenant Usage
 
+- [Introduction](#introduction)
 - [Configuration](#configuration)
+
+<a name="introduction"></a>
+## Introduction
+
+Some applications require that each client organization have their application data isolated from other client organizations. This requires that one application instance, in this case your Laravel application, can connect and respond to multiple database connections and servers for any given request. This can be accomplished by creating a new connection entry for each client in your `app/config/database.php` configuration file, but this can become unmaintainable quite quickly, especially if your service is quite popular and you are adding new connections all the time. A better solution would be a hands-off, dynamic system where you could assign users to tenants, or remove them at any given time.
+
+The Stillat Tenant service makes getting a setup like this running quickly. Using the Tenant service, you can define what migrations will run on your clients tenants (databases). It also provides Artisan commands to create or remove client tenants, run migrations or roll them back. In addition to the Artisan commands, it also exposes a simple API to make using it simple.
 
 <a name="configuration"></a>
 ## Configuration
