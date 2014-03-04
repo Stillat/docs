@@ -5,7 +5,7 @@
 <a name="intro"></a>
 ## Introduction
 
-Stillat provides a convenient way to use different sorting algorithms within your application. At the current time, Stillat supports the following sorting algorithms (fully-qualified name is in parenthesis):
+Stillat provides a convenient way to use different sorting algorithms within your application. At the current time, Stillat supports the following sorting algorithms (fully-qualified names are in parenthesis):
 
 * Bogo (`\Stillat\Common\Collections\Sorting\BogoSorter`)
 * Bubble (`\Stillat\Common\Collections\Sorting\BubbleSorter`)
